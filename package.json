@@ -1,0 +1,42 @@
+{
+  "name": "@medigy/medigy-classification-topics",
+  "version": "0.0.1",
+  "description": "Medigy Topics listing from Ontology (OWL) FIles",
+  "main": "dist/medigy-owl-topics.js",
+  "types": "dist/medigy-owl-topics.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublishOnly": "tsc --project tsconfig.json",
+    "build": "tsc --project tsconfig.json",
+    "test": "alsatian medigy-owl-topics.spec.ts"
+  },
+  "repository": {
+    "url": "git://github.com/medigy/medigy-classification-topics.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "Medigy",
+    "Topics"
+  ],
+  "author": "Medigy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medigy/medigy-classification-topics/issues"
+  },
+  "homepage": "https://github.com/medigy/medigy-classification-topics",
+  "devDependencies": {
+    "@types/node": "^14.0.26",
+    "alsatian": "^3.2.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@shah/traverse-urls": "^0.8.0",
+    "@types/node-fetch": "^2.5.7",
+    "@types/user-agents": "^1.0.0"
+  }
+}
